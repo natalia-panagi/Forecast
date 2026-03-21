@@ -82,29 +82,41 @@ main{
     margin-top: 20px;
 }
 
-.day-of-week{
+.forecast-weekday{
  text-align: center;
- color: rgba(39, 33, 66, 0.4);
+color:rgba(65, 50, 100, 0.7);
  font-size: 16px;
  margin-top: 40px;
+ padding-bottom: 15px;
 }
-.forecast{
+.forecast-section{
     display: flex;
     justify-content: space-around;
 }
-.forecast-icon{
-font-size: 38px;
-text-align: center;
+.forecast-day {
+    text-align: center;
 }
 
-.forecast-ts{
+.forecast-emoji{
+font-size: 38px;
+text-align: center;
+padding-bottom: 15px;
+}
+
+.forecast-temperatures{
     display: flex;
     justify-content: center;
 }
-.forecast-t{
+.forecast-temperature-high{
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+    padding: 0 5px;
+}
+.forecast-temperature-low{
     text-align: center;
     color: crimson;
-    padding: 0 5px;;
+    padding: 0 5px;
 }
 
 

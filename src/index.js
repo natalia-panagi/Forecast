@@ -61,10 +61,34 @@ function handleSearchSubmit(event){
     
     searchCity (searchInput.value);
 }
+searchCity("Madrid");
+
+function displayForecast() {
+
+let forecastElement = document.querySelector("#forecast");
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+let forecastHtml = "";
+
+days.forEach(function(day) {
+forecastHtml = forecastHtml + `          
+        <div class="forecast-day">
+            <div class="forecast-weekday">${day}</div>
+            <div class="forecast-emoji">☀️</div>
+            <div class="forecast-temperatures">
+                <div class="forecast-temperature-high"> 15°C </div>
+                <div class="forecast-temperature-low"> 10°C</div>
+            </div>
+        </div>
+        `;
+       
+});
+ forecastElement.innerHTML = forecastHtml;
+}
+
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Madrid");
-
+displayForecast();
 
 
