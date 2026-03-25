@@ -97,8 +97,8 @@ color:rgba(65, 50, 100, 0.7);
     text-align: center;
 }
 
-.forecast-emoji{
-font-size: 38px;
+.forecast-image{
+width: 80px;
 text-align: center;
 padding-bottom: 15px;
 }
